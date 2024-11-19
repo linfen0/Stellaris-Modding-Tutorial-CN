@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellaris Mod Document</title>
+    <style>
+        /* 页面基础样式 */
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* 标题栏样式 */
+        header {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1rem;
+        }
+
+        /* 主体内容样式 */
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        main section {
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        main section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            color: #444;
+        }
+
+        p, ul {
+            margin: 0.5rem 0;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 表格样式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 0;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Stellaris Mod Document</h1>
+        <p>群星 Mod 中文制作文档仓库导航</p>
+    </header>
+    <main>
+        <section>
+            <h2>写在前面</h2>
+            <p>这个<a href="https://main--pdxdoc-next.netlify.app/">教程</a>可能是群星中文社区中最完善的教程了，虽然有些许过时，但依然有很多内容值得参考，如果这个教程对打算制作 mod 的你有帮助，还望能够前往 <a href="https://github.com/Embers-of-the-Fire/pdxdoc-next">源仓库</a> 点个 star~。</p>
+            <p>欢迎各位模组制作者按下面的方式为教程贡献内容，使其更加完善。</p>
+        </section>
+        <section>
+            <h2>贡献指南</h2>
+            <h3>文档部分</h3>
+            <p>文档内容位于 <code>./src/content/docs/guides</code> 目录下。</p>
+            <p>添加新页面后，修改 <code>sidebar.json</code> 并将文档置于合适的分类下。</p>
+            <p><strong>注意：</strong> 修改侧边栏后需要重启应用程序，因为该配置直接被 <code>astro.config.mjs</code> 引用。</p>
+            <h3>博客</h3>
+            <p>博客内容位于 <code>./src/content/docs/blog</code> 目录下。更多信息参见 <a href="#">starlight-blog by HiDeoo</a>。</p>
+            <p>发表博客时，需将个人标识添加到 <code>author.ts</code> 中，头像放置于 <code>./public/authors</code> 文件夹。</p>
+        </section>
+        <section>
+            <h2>其他注意事项</h2>
+            <ul>
+                <li>修改 <code>sidebar.json</code> 或 <code>author.ts</code> 后需要重启应用程序。</li>
+                <li>图片应放置于 <code>.assets</code> 子目录中，例如 <code>src/content/docs/blog/practical_editor.assets/</code>。</li>
+                <li>文章需配备摘要，文件名不使用中文或拼音。</li>
+            </ul>
+        </section>
+        <section>
+            <h2>构建命令</h2>
+            <p>在项目根目录下运行以下命令：</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>命令</th>
+                        <th>行为</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>pnpm install</code></td>
+                        <td>下载依赖</td>
+                    </tr>
+                    <tr>
+                        <td><code>pnpm run dev</code></td>
+                        <td>启动开发服务器</td>
+                    </tr>
+                    <tr>
+                        <td><code>pnpm run build</code></td>
+                        <td>构建站点到 <code>./dist</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>pnpm run preview</code></td>
+                        <td>本地预览站点</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>致谢</h2>
+            <p>本站点基于 <a href="https://astro.build" target="_blank">Astro</a> 构建，UI 配置基于 Starlight。</p>
+        </section>
+    </main>
+</body>
+</html>
