@@ -1,6 +1,6 @@
 # 写在前面
 这个教程可能是群星中文社区中最完善的教程了，如果这个教程着实的对打算制作mod的你有帮助，希望能够前往 [__源仓库__](https://github.com/Embers-of-the-Fire/pdxdoc-next) 点个star~,
-欢迎在制作mod过程中有想法的modder按下面的方式为教程做贡献，使其更加完善~
+欢迎各位模组制作者按下面的方式为教程贡献内容，使其更加完善
 # Stellaris Mod Document 群星 Mod 制作文档
 
 本仓库部署于 [pdxdoc-next @ netlify](https://main--pdxdoc-next.netlify.app/)。
